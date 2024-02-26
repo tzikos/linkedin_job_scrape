@@ -12,7 +12,7 @@ location = os.environ["LOCATION"]
 def get_job_ids(keywords, location):
     base_url = 'https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?'
     start = 0
-    target_url = base_url + f'keywords={quote(keywords)}&location={quote(location)}'
+    target_url = base_url + f'keywords={quote(keywords)}&location={quote(location)}&f_TPR=r604800'
     job_ids = []
 
     print('Reading proxies.....')
